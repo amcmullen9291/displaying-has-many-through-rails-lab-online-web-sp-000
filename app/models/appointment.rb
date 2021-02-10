@@ -11,7 +11,7 @@ class Appointment < ApplicationRecord
     end
     
     def convert_datetime_to_long_format
-        self.appointment_datetime.to_formatted_s(:long)
+        self.appointment_datetime.to_formatted_s(:long_ordinal)
     end
 
     def convert_datetime_to_readable
